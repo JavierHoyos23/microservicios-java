@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Country {
 
     @Id // Por convencion JPA pide un ID para las tablas
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
     @Column
