@@ -10,13 +10,13 @@ public class Country {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column
+    @Column(unique = true, nullable = false)
     String name;
 
-    @Column
+    @Column(unique = true, nullable = false)
     String code;
 
-    @Column
+    @Column(nullable = false)
     String currency;
 
     public Long getId() {
